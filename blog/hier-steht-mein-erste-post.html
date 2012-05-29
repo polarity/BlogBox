@@ -1,0 +1,24 @@
+<p>Ich habe schon vor Jahren nach Website Hosting-Lösungen gesucht, die auf <a href="https://www.dropbox.com">Dropbox</a> basieren. Man kann zwar HTML Files direkt aus dem Dropbox Public-Ordner anzeigen lassen, aber es fehlen ja ne Menge andere Sachen die man so braucht.</p>
+
+<h4>Droppages</h4>
+
+<p><img src="http://dl.dropbox.com/u/698277/bloodrop/droppages.jpg" alt="Droppages" title="" />
+Hängen geblieben bin ich damals bei <a href="http://droppages.com/">DropPages</a>. Man lädt Templates und Markdown Dateien hoch und bekommt ne komplette Webseite unter irgendeiner URL. Irgendwie habe ich das damals aber wieder fallengelassen. Glaube da haben damals ne Menge Sachen gefehlt. Mittlerweile sieht es aber recht umfangreich aus.</p>
+
+<h4>Scriptogr.am</h4>
+
+<p><img src="http://dl.dropbox.com/u/698277/bloodrop/scriptogram.jpg" alt="SCriptogram" title="" />
+Gestern habe ich von <a href="http://scriptogr.am/">Scriptogram</a> gehört, die fast dasselbe machen, nur auf einen Blog spezialisiert und mit fertigen Templates ala Tumblr. Nachteil fand ich hier, dass man immer in das Backend muss, um den Service manuell mit der Dropbox per klick zu synchronisieren. Wird sicher noch irgendwann geändert. Leider gibt es dort auch nur einen Online-HTML &amp; CSS Template Editor, an die Templates selbst kommt man per Dropbox nicht ran.</p>
+
+<h4>Pancake.io</h4>
+
+<p><img src="http://dl.dropbox.com/u/698277/bloodrop/pancake.jpg" alt="Pancake" title="" />
+Eine andere Möglichkeit die ich beim durchstöbern von Möglichkeiten gefunden habe, war <a href="http://pancake.io/">Pancake</a>, die wohl auch auf Webseiten setzen und auch PDFs, Bilder und MS Office Dateien unterstützen. Konnte ich leider noch nicht testen.</p>
+
+<h4>Dropbox CLI</h4>
+
+<p>Alle Dienste ziehen allerdings die Files aus der Dropbox auf ihren eigenen Webserver um diese dort zu parsen und zu hosten. Hmmmmm dachte ich mir und installierte kurzerhand die <a href="https://www.dropbox.com/install?os=lnx">Dropbox CLI</a> Version auf meinem <a href="http://uberspace.de/">Webspace bei den Ubernauten</a>. </p>
+
+<p>Nach zwei drei Terminal Kommandos, hatte ich dann meine komplette Dropbox auf dem Webspace. Per <a href="https://www.dropbox.com/download?dl=packages/dropbox.py">dropbox.py</a> habe ich dann alle Ordner aus dem Sync genommen und nur einen speziellen Ordner übrig gelassen. In diesen schmeisse ich nun lokal alles, was auf den Server soll. Nächste Schritte sind nun per <a href="http://nodejs.org/">Node.js</a> das Verzeichnis zu überwachen und alle *.md files durch den <a href="https://github.com/andris9/node-markdown">Markdown Parser</a> zu jagen. Wär doch gelacht.</p>
+
+<p>Eine komplette Anleitung zur Dropbox CLI poste ich noch. Da gabs einige Stolpersteine.</p>
